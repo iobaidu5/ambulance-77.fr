@@ -1,0 +1,245 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Lato:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./assets/js/popper.min.js"></script>
+    <script defer src="./assets/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+    <script> document.addEventListener("DOMContentLoaded", () => { document.querySelectorAll("img[src]").forEach(image => { const altText = generateAltText(image.getAttribute("src")); image.alt = altText; }); }); function generateAltText(src) { return src.split('/').pop().split('.')[0].replace(/[-\/_*]/g, ' '); } </script>
+
+    <title></title>
+<meta property="og:title" content="" />
+<meta property="og:locale" content="fr_FR" />
+<meta name="description" content="" />
+<meta property="og:description" content="" />
+<meta name="keywords" content="" />
+<link rel="canonical" href="http://localhost:4000/galerie" />
+<meta property="og:url" content="http://localhost:4000/galerie" />
+<meta property="og:site_name" content="BHInternet" />
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"WebSite",
+"url":"http://localhost:4000/galerie",
+"description":"",
+"name":""
+}
+</script>
+
+
+</head>
+  <body>
+    <section class="Navbar navbar-main">
+    <nav class="navbar Navbar_main navbar-expand-lg">
+        <div class="container-fluid">
+            <!-- <div class="to-be-flex"> -->
+                <div class="Navbar_image">
+                    <a href="./index.html" title="Accueil"><img loading="lazy" src="./assets/img/logo.png"
+                            class="Navbar_image-img" alt="Logo" /></a>
+                </div>
+                <div class="Navbar_right to-hide-990">
+                    <div class="Navbar_right-content">
+                        <div class="Navbar_right-content--icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="Navbar_right-info">
+                            <p class="Navbar_right-content--title">Adresse</p>
+                            <p class="Navbar_right-content--p">2 Avenue Pierre Brossolette 91230 Montgeron</p>
+                        </div>
+                    </div>
+                    <hr class="vertical-line">
+                    <div class="Navbar_right-content">
+                        <div class="Navbar_right-content--icon"><i class="fas fa-phone-alt"></i></div>
+                        <div class="Navbar_right-info">
+                            <p class="Navbar_right-content--title">Téléphone</p>
+                            <a href="tel:06 33 29 64 93"
+                                class="Navbar_right-content--link">06 33 29 64 93</a>
+                        </div>
+                    </div>
+                    <hr class="vertical-line">
+                    <div class="Navbar_right-content">
+                        <div class="Navbar_right-content--icon"><i class="fas fa-clock"></i></div>
+                        <div class="Navbar_right-info">
+                            <p class="Navbar_right-content--title">Nos horaires</p>
+                            <p class="Navbar_right-content--p">24H/24 et 7J/7</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="to-show-990">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <div class="w-100 to-end">
+                            <button class="navbar-toggler Navbar_toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fa fa-bars toggle-button Navbar_toggler-icon" aria-hidden="true"></i>
+                            </button>
+                            <div class="collapse navbar-collapse Navbar_nav-collapse" id="navbarNav">
+                                <div class="navbar-nav Navbar bg-trans">
+                                    <ul class="navbar-nav mr-auto navbar_content" id="nav">
+                                        <li class="nav-item navbar_content-list">
+                                            <a class="nav-link navbar_content-link" href="./index.html">Accueil</a>
+                                        </li>
+                                        <li class="nav-item navbar_content-list">
+                                            <a class="nav-link navbar_content-link" href="./nos-services.html">Nos Services</a>
+                                        </li>
+                                        <li class="nav-item navbar_content-list">
+                                            <a class="nav-link navbar_content-link" href="./zone-d-interventions.html">Zone d’Interventions</a>
+                                        </li>
+                                        <li class="nav-item navbar_content-list">
+                                            <a class="nav-link navbar_content-link" href="./contact.html">Nous Contacter</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link navbar_content-btn" href="tel:06 33 29 64 93">06 33 29 64 93
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="Navbar_right-content">
+                                    <div class="Navbar_right-content--icon"><i class="fas fa-map-marker-alt"></i></div>
+                                    <div class="Navbar_right-info">
+                                        <p class="Navbar_right-content--title">Adresse</p>
+                                        <p class="Navbar_right-content--p">2 Avenue Pierre Brossolette 91230 Montgeron</p>
+                                    </div>
+                                </div>
+                                <div class="Navbar_right-content">
+                                    <div class="Navbar_right-content--icon"><i class="fas fa-phone-alt"></i></div>
+                                    <div class="Navbar_right-info">
+                                        <p class="Navbar_right-content--title">Téléphone</p>
+                                        <a href="tel:06 33 29 64 93"
+                                            class="Navbar_right-content--link">06 33 29 64 93</a>
+                                    </div>
+                                </div>
+                                <div class="Navbar_right-content">
+                                    <div class="Navbar_right-content--icon"><i class="fas fa-clock"></i></div>
+                                    <div class="Navbar_right-info">
+                                        <p class="Navbar_right-content--title">Nos horaires</p>
+                                        <p class="Navbar_right-content--p">24H/24 et 7J/7</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            <!-- </div> -->
+        </div>
+    </nav>
+</section>
+<div class="navbar navbar2 fixedNav">
+    <nav class="navbar navbar-expand-lg navbar-light fixedNav">
+        <div class="w-100 to-end to-hide-990">
+            <button class="navbar-toggler Navbar_toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars toggle-button Navbar_toggler-icon" aria-hidden="true"></i>
+            </button>
+            <div class="collapse navbar-collapse Navbar_nav-collapse" id="navbarNav">
+                <div class="navbar-nav Navbar bg-trans">
+                    <ul class="navbar-nav mr-auto navbar_content" id="nav">
+                        <li class="nav-item navbar_content-list">
+                            <a class="nav-link navbar_content-link" href="./index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item navbar_content-list">
+                            <a class="nav-link navbar_content-link" href="./nos-services.html">Nos Services</a>
+                        </li>
+                        <li class="nav-item navbar_content-list">
+                            <a class="nav-link navbar_content-link" href="./zone-d-interventions.html">Zone d’Interventions</a>
+                        </li>
+                        <li class="nav-item navbar_content-list">
+                            <a class="nav-link navbar_content-link" href="./contact.html">Nous Contacter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar_content-btn" href="tel:06 33 29 64 93">06 33 29 64 93
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+
+    
+
+    <div class="">
+        <h1>Galerie</h1>
+
+TODO: Mettre une galerie bootstrap ici en test
+    </div>
+
+    <footer class="footer">
+    <div class="footer_blog">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="footer_logo">
+                        <a href="./index.html" title="Accueil"><img loading="lazy"
+                                src="./assets/img/footer-logo.png" class="footer_logo-img" alt="Logo" /></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="footer_content">
+                        <h4 class="footer_content-title">Zone d'intervention</h4>
+                        <ul class="footer_content-ul">
+                            <li class="footer_content-li">
+                                <a href="#" class="footer_content-li--a">Ambulance Seine-et-marne</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="footer_content">
+                        <h4 class="footer_content-title">Nos coordonnées</h4>
+                        <ul class="footer_content-ul">
+                            <li class="footer_content-li">
+                                <p class="footer_content-li--p">Adresse: 2 Avenue Pierre Brossolette 91230 Montgeron</p>
+                            </li>
+                            <li class="footer_content-li">
+                                <a href="tel:06 33 29 64 93" class="footer_content-li--a">Téléphone :
+                                    06 33 29 64 93</a>
+                            </li>
+                            <li class="footer_content-li">
+                                <a href="mailto:contact@ambulancesles2t.fr" class="footer_content-li--a">E-mail :
+                                    contact@ambulancesles2t.fr</a>
+                            </li>
+                            <li class="footer_content-li">
+                                <p class="footer_content-li--p">Nos horaires : 7J/7 – 24H/24</p>
+                            </li>
+                            <li class="footer_content-li">
+                                <a href="#" class="footer_content-li--icon">
+                                    <i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="footer_content-li--icon">
+                                    <i class="fab fa-twitter"></i></a>
+                                <a href="#" class="footer_content-li--icon">
+                                    <i class="fab fa-google-plus-g"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="footer_bottom">
+    <a href="https://bhinternet.fr/" target="_blank" class="footer_content-li--a text-center">
+        BHInternet - Création site internet | 2023</a>
+</div>
+
+<script src="./assets/js/index.js"></script>
+<!-- <script src="./assets/js/formSubmit.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+  </body>
+</html>

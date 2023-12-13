@@ -1,0 +1,441 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Lato:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./assets/js/popper.min.js"></script>
+    <script defer src="./assets/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+    <script> document.addEventListener("DOMContentLoaded", () => { document.querySelectorAll("img[src]").forEach(image => { const altText = generateAltText(image.getAttribute("src")); image.alt = altText; }); }); function generateAltText(src) { return src.split('/').pop().split('.')[0].replace(/[-\/_*]/g, ' '); } </script>
+
+    <title>Page d'accueil</title>
+<meta property="og:title" content="Page d'accueil" />
+<meta property="og:locale" content="fr_FR" />
+<meta name="description" content="Voici la page d'accueil." />
+<meta property="og:description" content="Voici la page d'accueil." />
+<meta name="keywords" content="" />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="BHInternet" />
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"WebSite",
+"url":"http://localhost:4000/",
+"description":"Voici la page d'accueil.",
+"name":"Page d'accueil"
+}
+</script>
+
+
+</head>
+  <body>
+    <section class="Navbar navbar-main">
+    <nav class="navbar Navbar_main navbar-expand-lg">
+        <div class="container-fluid">
+            <!-- <div class="to-be-flex"> -->
+                <div class="Navbar_image">
+                    <a href="./index.html" title="Accueil"><img loading="lazy" src="./assets/img/logo.png"
+                            class="Navbar_image-img" alt="Logo" /></a>
+                </div>
+                <div class="Navbar_right to-hide-990">
+                    <div class="Navbar_right-content">
+                        <div class="Navbar_right-content--icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="Navbar_right-info">
+                            <p class="Navbar_right-content--title">Adresse</p>
+                            <p class="Navbar_right-content--p">2 Avenue Pierre Brossolette 91230 Montgeron</p>
+                        </div>
+                    </div>
+                    <hr class="vertical-line">
+                    <div class="Navbar_right-content">
+                        <div class="Navbar_right-content--icon"><i class="fas fa-phone-alt"></i></div>
+                        <div class="Navbar_right-info">
+                            <p class="Navbar_right-content--title">Téléphone</p>
+                            <a href="tel:06 33 29 64 93"
+                                class="Navbar_right-content--link">06 33 29 64 93</a>
+                        </div>
+                    </div>
+                    <hr class="vertical-line">
+                    <div class="Navbar_right-content">
+                        <div class="Navbar_right-content--icon"><i class="fas fa-clock"></i></div>
+                        <div class="Navbar_right-info">
+                            <p class="Navbar_right-content--title">Nos horaires</p>
+                            <p class="Navbar_right-content--p">24H/24 et 7J/7</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="to-show-990">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <div class="w-100 to-end">
+                            <button class="navbar-toggler Navbar_toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fa fa-bars toggle-button Navbar_toggler-icon" aria-hidden="true"></i>
+                            </button>
+                            <div class="collapse navbar-collapse Navbar_nav-collapse" id="navbarNav">
+                                <div class="navbar-nav Navbar bg-trans">
+                                    <ul class="navbar-nav mr-auto navbar_content" id="nav">
+                                        <li class="nav-item navbar_content-list">
+                                            <a class="nav-link navbar_content-link" href="./index.html">Accueil</a>
+                                        </li>
+                                        <li class="nav-item navbar_content-list">
+                                            <a class="nav-link navbar_content-link" href="./nos-services.html">Nos Services</a>
+                                        </li>
+                                        <li class="nav-item navbar_content-list">
+                                            <a class="nav-link navbar_content-link" href="./zone-d-interventions.html">Zone d’Interventions</a>
+                                        </li>
+                                        <li class="nav-item navbar_content-list">
+                                            <a class="nav-link navbar_content-link" href="./contact.html">Nous Contacter</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link navbar_content-btn" href="tel:06 33 29 64 93">06 33 29 64 93
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="Navbar_right-content">
+                                    <div class="Navbar_right-content--icon"><i class="fas fa-map-marker-alt"></i></div>
+                                    <div class="Navbar_right-info">
+                                        <p class="Navbar_right-content--title">Adresse</p>
+                                        <p class="Navbar_right-content--p">2 Avenue Pierre Brossolette 91230 Montgeron</p>
+                                    </div>
+                                </div>
+                                <div class="Navbar_right-content">
+                                    <div class="Navbar_right-content--icon"><i class="fas fa-phone-alt"></i></div>
+                                    <div class="Navbar_right-info">
+                                        <p class="Navbar_right-content--title">Téléphone</p>
+                                        <a href="tel:06 33 29 64 93"
+                                            class="Navbar_right-content--link">06 33 29 64 93</a>
+                                    </div>
+                                </div>
+                                <div class="Navbar_right-content">
+                                    <div class="Navbar_right-content--icon"><i class="fas fa-clock"></i></div>
+                                    <div class="Navbar_right-info">
+                                        <p class="Navbar_right-content--title">Nos horaires</p>
+                                        <p class="Navbar_right-content--p">24H/24 et 7J/7</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            <!-- </div> -->
+        </div>
+    </nav>
+</section>
+<div class="navbar navbar2 fixedNav">
+    <nav class="navbar navbar-expand-lg navbar-light fixedNav">
+        <div class="w-100 to-end to-hide-990">
+            <button class="navbar-toggler Navbar_toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars toggle-button Navbar_toggler-icon" aria-hidden="true"></i>
+            </button>
+            <div class="collapse navbar-collapse Navbar_nav-collapse" id="navbarNav">
+                <div class="navbar-nav Navbar bg-trans">
+                    <ul class="navbar-nav mr-auto navbar_content" id="nav">
+                        <li class="nav-item navbar_content-list">
+                            <a class="nav-link navbar_content-link" href="./index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item navbar_content-list">
+                            <a class="nav-link navbar_content-link" href="./nos-services.html">Nos Services</a>
+                        </li>
+                        <li class="nav-item navbar_content-list">
+                            <a class="nav-link navbar_content-link" href="./zone-d-interventions.html">Zone d’Interventions</a>
+                        </li>
+                        <li class="nav-item navbar_content-list">
+                            <a class="nav-link navbar_content-link" href="./contact.html">Nous Contacter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar_content-btn" href="tel:06 33 29 64 93">06 33 29 64 93
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+
+    
+        <section class="slider">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="slider_content">
+                    <h1 class="slider_content-title">Découvrez les Ambulances les 2T dans le 77</h1>
+                    <p class="slider_content-p">Pour toute demande de réservation, contactez-nous au <span
+                            class="slider_content-link">06 33 29 64 93</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+
+    <div class="">
+        <p class="menu_content-p extra-padding text-center pb-0 mb-4 mt-5">Situées en Seine-et-Marne, les Ambulances les 2T sont
+    à votre service,
+    répondant promptement à vos demandes sur simple appel.</p>
+<section class="menu">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="menu_content">
+                <div class="menu_content-box">
+                    <div class="menu_content-box--left"></div>
+                    <div class="menu_content-image">
+                        <img src="./assets/img/m1.png" alt="" class="menu_content-image--img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="menu_content mt-5">
+                <h2 class="menu_content-title">Une Intervention 24H/24, 7J/7 dans le 77</h2>
+                <hr class="menu_content-divider">
+                <p class="menu_content-p extra-padding-right">Dotées de multiples équipes d'ambulanciers, notre présence
+                    dans le département
+                    77 nous permet d'intervenir en permanence, assurant ainsi un service continu 24 heures sur 24, 7
+                    jours sur 7 pour satisfaire tous vos besoins médicaux.</p>
+                    <div class="menu_content-abs">
+                        <a href="./contact.html" class="menu_content-link">Contact</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="menu m-t-extra bg-sec">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="extra-padding">
+                <div class="menu_content mt-5">
+                    <h2 class="menu_content-title">Agrément et Convention : Une Garantie de Qualité</h2>
+                    <hr class="menu_content-divider">
+                    <p class="menu_content-p text-white">Notre entreprise d'ambulance dans le 77 est agréée par
+                        l’ARS (Agence Régional de la Santé) et conventionnée par la Caisse Primaire d’Assurance Maladie.
+                        Cette double accréditation garantit une prise en charge par la CPAM si votre transport est
+                        prescrit
+                        par votre médecin.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="menu_content">
+                <div class="menu_content-box">
+                    <div class="menu_content-box--right"></div>
+                    <div class="menu_content-image2">
+                        <img src="./assets/img/m2.png" alt="" class="menu_content-image2--img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="menu">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="menu_content">
+                <div class="menu_content-box">
+                    <div class="menu_content-box--left"></div>
+                    <div class="menu_content-image">
+                        <img src="./assets/img/m3.png" alt="" class="menu_content-image--img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="menu_content mt-5">
+                <div class="container">
+                    <h2 class="menu_content-title extra-padding-right">Expérience et Disponibilité pour Vos Déplacements
+                        Médicaux</h2>
+                    <hr class="menu_content-divider">
+                    <p class="menu_content-p extra-padding-right">Fortes de nombreuses années d'expérience dans le
+                        transport médical, nos équipes d'ambulanciers sont disponibles pour tous vos déplacements
+                        médicaux et sanitaires en Île-de-France.
+                    </p>
+                    <div class="menu_content-abs">
+                        <a href="./contact.html" class="menu_content-link">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="stripe m-t-extra">
+    <div class="stripe_content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 my-2">
+                    <div class="menu_content menu-col-flex">
+                        <h3 class="menu_content-title text-center">Des milliers</h3>
+                        <p class="menu_content-p text-center text-white mb-0 mt-3">
+                            Courses réalisées chaque année à bord de<br>nos véhicules d'ambulance.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 my-2">
+                    <div class="menu_content menu-col-flex">
+                        <h3 class="menu_content-title text-center">98%</h3>
+                        <p class="menu_content-p text-center text-white mb-0 mt-3">
+                            D’avis positif
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 my-2">
+                    <div class="menu_content menu-col-flex">
+                        <h3 class="menu_content-title text-center">20K</h3>
+                        <p class="menu_content-p text-center text-white mb-0 mt-3">
+                            De clients satisfaits
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="menu bg-sec">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="menu_content">
+                <div class="menu_content-box">
+                    <div class="menu_content-box--left"></div>
+                    <div class="menu_content-image">
+                        <img src="./assets/img/m4.png" alt="" class="menu_content-image--img2">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="menu_content mt-5">
+                <h2 class="menu_content-title extra-padding-right">Accompagnement dans Toutes Situations Médicales</h2>
+                <hr class="menu_content-divider">
+                <p class="menu_content-p extra-padding-right text-white">
+                    Que ce soit pour une urgence médicale, un transfert hospitalier, un rendez-vous médical ou une
+                    sortie hospitalière, nos ambulanciers interviennent rapidement sur simple appel. <strong>Pour toute
+                        demande
+                        de réservation, contactez-nous au <a href="tel:06 33 29 64 93"
+                            class="link text-white">06 33 29 64 93</a></strong>
+                </p>
+                <div class="menu_content-abs">
+                    <a href="./contact.html" class="menu_content-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="menu mt-5 pb-5">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="extra-padding">
+                <div class="menu_content mt-5">
+                    <h2 class="menu_content-title">Confort et Sécurité au Cœur de Nos Services</h2>
+                    <hr class="menu_content-divider">
+                    <p class="menu_content-p">Afin de faciliter votre trajet, nos équipes d'ambulanciers professionnels,
+                        assidus et soucieux de votre confort, mettront tout en œuvre. Nos véhicules récents et
+                        suréquipés répondent aux normes sanitaires en vigueur, assurant ainsi votre sécurité tout au
+                        long du trajet.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="menu_content">
+                <div class="menu_content-box">
+                    <div class="menu_content-image2 t-0">
+                        <img src="./assets/img/m5.png" alt="" class="menu_content-image2--img3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div style="width: 100%"><iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0"
+        marginwidth="0"
+        src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=Seine-et-Marne,%2077,%20France+(Ambulance%2077)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+            href="https://www.maps.ie/population/">Population mapping</a></iframe></div>
+    </div>
+
+    <footer class="footer">
+    <div class="footer_blog">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="footer_logo">
+                        <a href="./index.html" title="Accueil"><img loading="lazy"
+                                src="./assets/img/footer-logo.png" class="footer_logo-img" alt="Logo" /></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="footer_content">
+                        <h4 class="footer_content-title">Zone d'intervention</h4>
+                        <ul class="footer_content-ul">
+                            <li class="footer_content-li">
+                                <a href="#" class="footer_content-li--a">Ambulance Seine-et-marne</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="footer_content">
+                        <h4 class="footer_content-title">Nos coordonnées</h4>
+                        <ul class="footer_content-ul">
+                            <li class="footer_content-li">
+                                <p class="footer_content-li--p">Adresse: 2 Avenue Pierre Brossolette 91230 Montgeron</p>
+                            </li>
+                            <li class="footer_content-li">
+                                <a href="tel:06 33 29 64 93" class="footer_content-li--a">Téléphone :
+                                    06 33 29 64 93</a>
+                            </li>
+                            <li class="footer_content-li">
+                                <a href="mailto:contact@ambulancesles2t.fr" class="footer_content-li--a">E-mail :
+                                    contact@ambulancesles2t.fr</a>
+                            </li>
+                            <li class="footer_content-li">
+                                <p class="footer_content-li--p">Nos horaires : 7J/7 – 24H/24</p>
+                            </li>
+                            <li class="footer_content-li">
+                                <a href="#" class="footer_content-li--icon">
+                                    <i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="footer_content-li--icon">
+                                    <i class="fab fa-twitter"></i></a>
+                                <a href="#" class="footer_content-li--icon">
+                                    <i class="fab fa-google-plus-g"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="footer_bottom">
+    <a href="https://bhinternet.fr/" target="_blank" class="footer_content-li--a text-center">
+        BHInternet - Création site internet | 2023</a>
+</div>
+
+<script src="./assets/js/index.js"></script>
+<!-- <script src="./assets/js/formSubmit.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+  </body>
+</html>
